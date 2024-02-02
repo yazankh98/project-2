@@ -1,0 +1,645 @@
+p {
+    margin-bottom: 0;
+    /* put this select because cdn of jsdelivr.net/npm/bootstrap@5.3.2/scs5/_reboot.scss:130 put{
+    margin-bottom: 1rem; of all p
+   } */
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 6000px;
+}
+
+/* nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    /* position: fixed;
+    top: 0px; */
+}
+
+/* nav bar middel */
+
+nav .middel ul {
+    display: flex;
+    text-decoration: none;
+    gap: 25px;
+    list-style: none;
+    font-weight: 700;
+}
+
+nav .middel ul a {
+    text-decoration: none;
+    color: #274C5B;
+}
+
+/* nav bar right */
+
+.right {
+    display: flex;
+    gap: 5px;
+}
+
+.right .search input {
+    border: 1px solid #FAFAFA;
+    background-color: #FAFAFA;
+    border-radius: 50px;
+    position: relative;
+}
+
+nav .right .search {
+    display: flex;
+    align-items: center;
+}
+
+nav .right .search .icon {
+    background-color: #7EB693;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+}
+
+nav .right .icon i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav .right .cart {
+    background-color: #274C5B;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 2px;
+}
+
+nav .right .cart i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+nav .container-cart {
+    border-radius: 50px;
+    width: 70px;
+    background-color: beige;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container-cart p {
+    display: inline;
+    padding: 0 8px 0 0;
+
+}
+
+/* hero */
+
+.hero {
+    position: relative;
+}
+
+.hero-bg img {
+    width: 100%;
+}
+
+.hero .hero-title {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+.hero .hero-title p {
+    font-weight: 400;
+    font-family: 'Yellowtail', cursive;
+    color: #68A47F;
+    font-size: 2rem;
+
+}
+
+.hero .hero-title h1 {
+    color: #274C5B;
+    font-weight: 900;
+    padding: 30px 0;
+    max-width: 17rem;
+}
+
+.hero .hero-button button {
+    display: flex;
+    padding: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #EFD372;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero .hero-button p {
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.hero .hero-button .arrow {
+    color: white;
+    background-color: #274C5B;
+    border-radius: 50%;
+    width: 20px;
+}
+
+/* section-1 */
+.sec-1 img {
+    width: 100%;
+}
+
+.sec-1 {
+    display: flex;
+    gap: 10px;
+    padding: 30px 30px 30px 30px;
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.sec-1-img1,
+.sec-1-img2 {
+    position: relative;
+    width: 100%;
+}
+
+.title-sec-1-img1 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.title-sec-1-img2 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.sec-1-img1 p {
+    font-family: 'Yellowtail', cursive;
+    color: white;
+
+}
+
+.sec-1-img2 p {
+    font-family: 'Yellowtail', cursive;
+    color: #7EB693;
+}
+
+.sec-1-img1 h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.sec-1-img2 h1 {
+    color: #274C5B;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+/* section-2 */
+
+
+/* section-2 it's work for screen (1050) to huge screen */
+.sec-2 {
+    position: relative;
+}
+
+.sec-2-right {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 50%;
+    background-color: #F9F8F8;
+    line-height: 2rem;
+}
+
+.sec-2-left img {
+    width: 100%;
+    background-size: contain;
+}
+
+.sec-2-right h5 {
+    color: #7EB693;
+    font-family: 'Yellowtail', cursive;
+    font-weight: 400;
+    width: max-content;
+    padding: 20px 0;
+}
+
+.sec-2-right h1 {
+    color: #274C5B;
+    font-weight: 900;
+    width: max-content;
+    font-size: 1.5rem;
+}
+
+.sec-2-right p {
+    color: #525C60;
+    font-weight: 400;
+    line-height: 1rem;
+    padding: 5px 0;
+}
+
+.sec-2-Organic,
+.sec-2-Standards {
+    display: flex;
+    align-items: center;
+}
+
+.sec-2-Organic h3,
+.sec-2-Standards h3 {
+    color: #274C5B;
+    font-weight: 800;
+    width: max-content;
+}
+
+.sec-2-Organic p,
+.sec-2-Standards p {
+    color: #525C60;
+    font-weight: 400;
+}
+
+.sec-2-button button {
+    display: flex;
+    padding: 5px 17px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #274C5B;
+    border: none;
+    border-radius: 5px;
+}
+
+.sec-2-button p {
+    color: white;
+}
+
+.sec-2-button .arrow,
+.sec-4-button .arrow {
+    color: white;
+    background-color: #335B6B;
+    border-radius: 50%;
+    width: 20px;
+}
+
+/* section-3 */
+
+.sec-3-card-x,
+.sec-4-card-x {
+    padding-top: 50px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.sec-3-card-title-x {
+    background-color: #274C5B;
+    color: white;
+    padding: 0px 10px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    border-radius: 8px;
+    width: max-content;
+}
+
+.sec-3 {
+    padding: 50px 25px;
+}
+
+.sec-3-title p {
+    padding-bottom: 10px;
+    font-weight: 400;
+    color: #7EB693;
+    font-family: 'Yellowtail', cursive;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.sec-3-title h1 {
+    color: #274C5B;
+    font-weight: 900;
+    width: max-content;
+    margin: 0 auto;
+}
+
+
+.sec-3-button button {
+    display: flex;
+    padding: 5px 17px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #274C5B;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.sec-3-button p {
+    padding: 15px 0;
+}
+
+.sec-3-price del {
+    color: #B8B8B8;
+    ;
+    padding-right: 5px;
+}
+
+.sec-3-price span {
+    color: #274C5B;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.sec-4 {
+    background-color: #274C5B;
+    padding-bottom: 200px;
+
+}
+
+.sec-4-container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+
+}
+
+
+.sec-4-button button {
+    background-color: #EFD372;
+    display: flex;
+    padding: 18px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #274C5B;
+
+}
+
+.sec-4-right p {
+    color: #7EB693;
+    font-family: 'Yellowtail', cursive;
+    font-weight: 400;
+}
+
+.sec-4-right h1 {
+    color: #FFF;
+    font-weight: 900;
+}
+
+.sec-4-card-x {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sec-5 {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.sec-5-img img {
+
+    width: 100%;
+}
+
+.sec-5-paragraph {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 0 0 20px 45px;
+    min-width: 50%;
+    top: 2rem;
+    right: 10px;
+    position: absolute;
+}
+
+.sec-5-paragraph-part1 p {
+    color: #7EB693;
+    font-family: 'Yellowtail', cursive;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.sec-5-paragraph-part1 h1 {
+    color: #274C5B;
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+
+.sec-5-paragraph h2 {
+    color: #274C5B;
+    font-weight: 500;
+    max-width: max-content;
+}
+
+.sec-5-paragraph p {
+    color: #525C60;
+    font-weight: 400;
+    max-width: max-content;
+}
+
+.sec-6-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    background-color: #F1F8F4;
+
+
+}
+
+.sec-6-container-img {
+    position: relative;
+    padding: 20px 40px;
+
+}
+
+.sec-6-container-img img {
+    width: 100%;
+}
+
+.sec-6-container h2 {
+    background-color: white;
+    width: max-content;
+    padding: 30px 30px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec-7-img {
+    position: relative;
+}
+
+.sec-7-img img {
+    width: 100%;
+}
+
+.sec-7-Subscribe {
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    padding: 0 50px;
+    width: 100%;
+    color: white;
+
+}
+
+.sec-7-email input {
+    border: none;
+    border-radius: 10px;
+    padding: 20px 50px
+}
+
+.sec-7-email button {
+    padding: 20px 50px;
+    background: #274C5B;
+    color: white;
+    border-radius: 15px;
+}
+
+.sec-7-email ::placeholder {
+    color: #ABABAB;
+    font-weight: 400;
+    padding: 30px 30px;
+
+}
+
+.sec-8-cotainer {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.sec-8-left {
+    width: 25%;
+}
+
+.sec-8-left .Contact {
+    color: #274C5B;
+    text-align: right;
+    /* font-weight: 700; */
+    padding-bottom: 25px;
+}
+
+.sec-8-Email {
+    text-align: right;
+    color: #525C60;
+
+}
+.sec-8-Email p{
+    padding-bottom: 15px;
+}
+
+
+
+.sec-8-mid {
+    width: 30%;
+}
+
+.sec-8-right {
+    width: 25%;
+}
+
+.sec-8-mid .sec-8-mid-img {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.sec-8-cotainer {
+    padding-top: 100px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 23rem;
+    background-color: #D4D4D4;
+    ;
+}
+
+.sec-8-mid-logo{
+    padding-bottom: 40px;
+}
+
+.sec-8-mid p
+{
+    color: #525C60;
+    padding-bottom: 60px;
+}
+
+.sec-8-right h2{
+    color: #274C5B;
+    padding-bottom: 2rem;
+}
+
+.sec-8-right p{
+    line-height: 3rem;
+    color: #525C60;
+}
+
+
+footer {
+    padding-top: 50px;
+}
+footer p{
+    text-align: center;
+    color: rgba(82, 92, 96, 1);
+}
+
+
+
+
+
+
+
+
+/*
+note: 1- don't forget position in navvar
+2-fix the proplem in section 5 
+3- dont forget image lodaing =lazy
+*/
