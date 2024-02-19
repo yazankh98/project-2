@@ -30,7 +30,9 @@ nav {
     /* position: fixed;
     top: 0px; */
 }
-
+nav .list {
+    display: none;
+}
 /* nav bar middel */
 
 nav .middel ul {
@@ -51,6 +53,7 @@ nav .middel ul a {
 .right {
     display: flex;
     gap: 5px;
+    min-width: 25%;
 }
 
 .right .search input {
@@ -433,4 +436,17 @@ footer {
 footer p{
     text-align: center;
     color: rgba(82, 92, 96, 1);
+}
+
+
+
+
+@media screen and (max-width:992px)
+{
+    nav .list {
+        display: block;
+    }
+    nav .middel {
+        display: none;
+    }
 }
