@@ -28,6 +28,9 @@ h5,
 h6 {
     margin-bottom: 0;
 }
+body {
+    position: relative;
+}
 
 /* nav bar */
 nav {
@@ -36,10 +39,10 @@ nav {
     align-items: center;
     padding: 30px 30px;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
     background-color: rgb(255, 255, 255);
-    /* position: fixed;
-    top: 0px; */
+    position: fixed;
+    top: 0px;
 }
 
 nav .logo img {
@@ -689,7 +692,9 @@ footer p {
     .hero .hero-title p {
         font-size: 0.9rem;
     }
-
+    .hero{
+        margin-top: 100px;
+    }
     .hero .hero-title h1 {
         padding: 0;
         max-width: 10rem;
@@ -850,6 +855,12 @@ footer p {
         display: flex;
         flex-wrap: nowrap;
     }
+    .sec-8-left .Contact {
+        width: max-content;
+    }
+    .sec-8-right h2{
+        width: max-content;
+    }
 }
 
 
@@ -859,6 +870,6 @@ footer p {
 
 /*
 note: 1- don't forget position in navvar
-2-fix the proplem in section 5 
-3- dont forget image lodaing =lazy
+
+
 */
